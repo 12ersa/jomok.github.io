@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f0ff; /* Background color light blue */
+}
+
+header {
+    background-color: #005b99; /* Dark blue */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #0073e6; /* Blue */
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2em 0;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    background: white;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #005b99; /* Dark blue */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.social-links a {
+    color: #005b99; /* Dark blue */
+    margin: 0 0.5em;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .portfolio-item {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+    
+    .portfolio-item {
+        flex-basis: 100%;
+    }
+    
+    footer {
+        position: static;
+        padding: 1em;
+    }
+}
